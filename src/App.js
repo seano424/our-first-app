@@ -1,5 +1,6 @@
 import fruits from './foods'
 import { choice, remove } from './helpers'
+import List from './components/List'
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
   console.log(test);
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <List />
     </div>
   );
 }
