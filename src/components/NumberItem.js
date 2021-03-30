@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './NumberItem.css'
 
 export default class NumberItem extends Component {
-  handleClick = (n) => {
+  handleRemove = (n) => {
     this.props.remove(n)
   }
 
@@ -10,7 +10,7 @@ export default class NumberItem extends Component {
     return (
       <div className="NumberItem">
         <h1>{this.props.number}</h1>
-        <button onClick={() => this.handleClick(this.props.number)}>X</button>
+        <button onClick={() => this.handleRemove(this.props.number)}>X</button>
       </div>
     )
   }
